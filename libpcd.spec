@@ -7,6 +7,7 @@ Epoch:		1
 License:	GPL
 Group:		Libraries
 Source0:	http://bytesex.org/misc/%{name}_%{version}.tar.gz
+# Source0-md5:	9b0533c21ad3e27827a550ec791ee826
 URL:		http://bytesex.org/libpcd.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
