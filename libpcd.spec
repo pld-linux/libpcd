@@ -2,7 +2,7 @@ Summary:	Library for reading PhotoCD images
 Summary(pl):	Biblioteka do odczytu plików PhotoCD
 Name:		libpcd
 Version:	1.0.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		Libraries
@@ -47,6 +47,7 @@ Statyczna wersja biblioteki libpcd.
 %build
 %{__make} \
 	CC="%{__cc}" \
+	libdir=%{_libdir} \
 	CFLAGS="%{rpmcflags} \$(WARN)"
 
 %install
@@ -54,6 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
+	libdir=$RPM_BUILD_ROOT%{_libdir} \
 	prefix=%{_prefix}
 
 %clean
