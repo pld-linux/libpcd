@@ -1,13 +1,13 @@
 Summary:	Library for reading PhotoCD images
 Summary(pl):	Biblioteka do odczytu plików PhotoCD
 Name:		libpcd
-Version:	1.0
+Version:	1.0.1
 Release:	1
 Epoch:		1
 License:	GPL
 Group:		Libraries
 Source0:	http://bytesex.org/misc/%{name}_%{version}.tar.gz
-# Source0-md5:	9b0533c21ad3e27827a550ec791ee826
+# Source0-md5:	c9127a6aae3c7510498990d82bb0b68a
 URL:		http://bytesex.org/libpcd.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
