@@ -21,7 +21,7 @@ Biblioteka do odczytu plików PhotoCD.
 Summary:	libpcd header file
 Summary(pl):	Plik nag³ówkowy libpcd
 Group:		Development/Libraries
-Requires:	libpcd = %{version}
+Requires:	libpcd = %{epoch}:%{version}-%{release}
 
 %description devel
 libpcd header file.
@@ -33,7 +33,7 @@ Plik nag³ówkowy biblioteki libpcd.
 Summary:	libpcd static library
 Summary(pl):	Biblioteka statyczna libpcd
 Group:		Development/Libraries
-Requires:	libpcd-devel = %{version}
+Requires:	libpcd-devel = %{epoch}:%{version}-%{release}
 
 %description static
 Static version of libpcd.
