@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc pcd.css pcd.html
 %attr(755,root,root) %{_libdir}/libpcd.so
-%attr(644,root,root) %{_includedir}/pcd.h
+%{_includedir}/pcd.h
 
 %files static
 %defattr(644,root,root,755)
