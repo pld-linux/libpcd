@@ -1,5 +1,5 @@
 Summary:	Library for reading PhotoCD images
-Summary(pl):	Biblioteka do odczytu plik體 PhotoCD
+Summary(pl.UTF-8):   Biblioteka do odczytu plik贸w PhotoCD
 Name:		libpcd
 Version:	1.0.1
 Release:	2
@@ -14,31 +14,31 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Library for reading PhotoCD images.
 
-%description -l pl
-Biblioteka do odczytu plik體 PhotoCD.
+%description -l pl.UTF-8
+Biblioteka do odczytu plik贸w PhotoCD.
 
 %package devel
 Summary:	libpcd header file
-Summary(pl):	Plik nag丑wkowy libpcd
+Summary(pl.UTF-8):   Plik nag艂贸wkowy libpcd
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 
 %description devel
 libpcd header file.
 
-%description devel -l pl
-Plik nag丑wkowy biblioteki libpcd.
+%description devel -l pl.UTF-8
+Plik nag艂贸wkowy biblioteki libpcd.
 
 %package static
 Summary:	libpcd static library
-Summary(pl):	Biblioteka statyczna libpcd
+Summary(pl.UTF-8):   Biblioteka statyczna libpcd
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
 %description static
 Static version of libpcd.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki libpcd.
 
 %prep
