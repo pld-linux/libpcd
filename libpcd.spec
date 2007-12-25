@@ -2,7 +2,7 @@ Summary:	Library for reading PhotoCD images
 Summary(pl.UTF-8):	Biblioteka do odczytu plików PhotoCD
 Name:		libpcd
 Version:	1.0.1
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL
 Group:		Libraries
