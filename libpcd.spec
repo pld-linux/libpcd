@@ -2,13 +2,14 @@ Summary:	Library for reading PhotoCD images
 Summary(pl.UTF-8):	Biblioteka do odczytu plików PhotoCD
 Name:		libpcd
 Version:	1.0.1
-Release:	5
+Release:	6
 Epoch:		1
-License:	GPL
+License:	GPL v2+
 Group:		Libraries
 Source0:	http://bytesex.org/misc/%{name}_%{version}.tar.gz
 # Source0-md5:	c9127a6aae3c7510498990d82bb0b68a
 URL:		http://bytesex.org/libpcd.html
+Patch0:		%{name}-pointer-sign.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,6 +44,7 @@ Statyczna wersja biblioteki libpcd.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 %build
 %{__make} \
@@ -67,13 +69,13 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_libdir}/libpcd.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libpcd.so.2
+%{_libdir}/libpcd.so.*.*.*
+%ghost %{_libdir}/libpcd.so.2
 
 %files devel
 %defattr(644,root,root,755)
 %doc pcd.css pcd.html
-%attr(755,root,root) %{_libdir}/libpcd.so
+%{_libdir}/libpcd.so
 %{_includedir}/pcd.h
 
 %files static

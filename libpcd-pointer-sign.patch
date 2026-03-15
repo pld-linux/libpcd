@@ -1,0 +1,11 @@
+--- libpcd-1.0.1/file.c.orig	2011-02-17 12:00:00.000000000 +0100
++++ libpcd-1.0.1/file.c	2011-02-17 12:00:01.000000000 +0100
+@@ -40,7 +40,7 @@
+ 	return -1;
+     }
+     close(fd);
+-    if (0 == strncmp("PCD_OPA", img->mmap, 7)) {
++    if (0 == strncmp("PCD_OPA", (const char *)img->mmap, 7)) {
+ 	/* this is the thumbnails file */
+ 	img->thumbnails = (int) img->mmap[10] << 8 | (int) img->mmap[11];
+     } else {
